@@ -6,8 +6,12 @@ body {
 
 }
 
-.initial-content,
-.about-content {
+#principal-title {
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.split-contents {
     border-bottom: 1px dotted rgb(58, 57, 57);
 }
 
@@ -49,12 +53,49 @@ body {
 }
 
 .background-content {
+    display: block;
+    margin-bottom: 50px;
     background-color: rgba(151, 151, 151, 0.274);
     position: relative;
+    height: 250px;
 }
 
 .background-content h2{
-    padding: 50px;
+    margin: 50px;
+    padding-top: 50px;
     display: block;
     font-size: 40px;
+}
+
+.background-content span{
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+}
+
+.legend-italic {
+    display: block;
+    font-style: italic;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.list-items {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.list li {
+    padding: 5px 0px;
+}
+
+.list h3 {
+    font-size: 30px;
+}
+
+.background-content-2 {
+    display: block;
+    margin-bottom: 50px;
+    background-color: rgba(151, 151, 151, 0.274);
+    position: relative;
+    height: 300px;
 }
