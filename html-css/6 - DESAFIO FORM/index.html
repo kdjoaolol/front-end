@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="purple"></div>
+    <div class="main-container">
+        <div class="header-form">
+            <h3>Formulário</h3>
+        </div>
+        <div class="form">
+            <h1>Venda fácil seu carro!</h1>
+            <span>Descreva as características e marque os opcionais que ele possui</span>
+            <!-- Título do anuncio -->
+            <div class="form-item">
+                <label for="title">Título do anúncio</label>
+                <input type="text" name="title" required placeholder="Um título para anunciar seu carro">
+            </div>
+            <!-- Preço -->
+            <div class="form-item">
+                <label for="price">Preço:</label>
+                <input type="number" name="price" required placeholder="Defina o preço">
+            </div>
+            <!-- Descrição -->
+            <div class="form-item">
+                <label for="description">Descrição:</label>
+                <textarea name="description" required
+                    placeholder="Aqui você coloca os detalhes do veículo, por exemplo: se ele tem algum arranhão"></textarea>
+            </div>
+            <!-- Marcas de carros  -->
+            <div class="form-item">
+                <label for="mark">Marca</label>
+                <input type="text" name="mark" list="marks" placeholder="Digite a marca do veículo">
+
+                <datalist id="marks">
+                    <option value="Ford"></option>
+                    <option value="Volvo"></option>
+                    <option value="Ferrari"></option>
+                    <option value="Audi"></option>
+                    <option value="BMW"></option>
+                </datalist>
+            </div>
+            <!-- Modelo -->
+            <div class="form-item">
+                <label for="model">Modelo:</label>
+                <input type="text" name="model" placeholder="Digite o modelo do veículo">
+            </div>
+            <!-- Quilometragem -->
+            <div class="form-item">
+                <label for="kilometers">Kilometragem:</label>
+                <input type="text" name="kilometers" placeholder="Digite a quilometragem do veículo">
+            </div>
+            <!-- Data de compra -->
+            <div class="form-item">
+                <label for="buy_date">Date de compra:</label>
+                <input type="date" name="buy_date">
+            </div>
+
+        </div>
+</body>
+
+</html>

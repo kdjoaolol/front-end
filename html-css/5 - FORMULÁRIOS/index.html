@@ -44,6 +44,139 @@
             </select>
         </div>
 
+        <!-- 8 - multiplas opções  -->
+        <div>
+            <label for="items">Selecione os intens desejados:</label>
+            <select name="items" multiple>
+                <option value="pera">Pera</option>
+                <option value="pera">Arroz</option>
+                <option value="pera">Feijao</option>
+                <option value="pera">Carne</option>
+                <option value="pera">Agua</option>
+            </select>
+        </div>
+
+        <!-- 9 - texte area  -->
+        <div>
+            <label for="comment">Digite seu comentario:</label>
+            <textarea name="comment"></textarea>
+        </div>
+
+        <!-- 10 - fieldset e legend  -->
+        <div>
+            <fieldset>
+                <legend>Preencha as suas informações:</legend>
+                <label for="firstname">Nome:</label>
+                <input type="text" name="firstname">
+
+                <label for="lastname">Sobrenome:</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+
+        <!-- 11 - datalist  -->
+
+        <div>
+            <label for="flavor">Escolha o sabor:</label>
+            <input type="text" list="flavors" name="flavor">
+
+            <datalist id="flavors">
+                <option value="Cereja"></option>
+                <option value="Morango"></option>
+                <option value="Abacaxi"></option>
+                <option value="Chocolate"></option>
+            </datalist>
+        </div>
+
+        <!-- 12 - senha  -->
+
+        <div>
+            <label for="password">Digite a sua senha:</label>
+            <input type="password" name="password">
+        </div>
+
+        <!-- 14 - input radio  -->
+
+        <div>
+            <label for="car_model">Escolha o modelo do seu carro:</label>
+            <div class="radio">
+                <input type="radio" name="car_model" value="bmw">
+                <label for="bmw">BMW</label>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="car_model" value="ferrari">
+                <label for="ferrari">Ferrari</label>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="car_model" value="volvo">
+                <label for="volvo">Volvo</label>
+            </div>
+        </div>
+
+        <!-- 15 - inpuit chechbox  -->
+
+        <div>
+            <label for="optionals">Opcionais do carro:</label>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="big_tires">
+                <label for="bit_tires">Pneus Grandes</label>
+            </div>
+
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="turbo_engine">
+                <label for="turbo_engine">Motor turbo</label>
+            </div>
+
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="hybrid">
+                <label for="hybrid">Carro híbrido</label>
+            </div>
+        </div>
+
+        <!-- 16 - datas  -->
+
+        <div>
+            <label for="birthday">Data de nascimento:</label>
+            <input type="date" name="birthday">
+        </div>
+
+        <!-- 17 - enviar arquivos (img ou pdf) -->
+
+        <div>
+            <label for="image">Insira sua imagem:</label>
+            <input type="file" name="image">
+        </div>
+
+        <!-- 18 - numeros  -->
+
+        <div><label for="salary">Quanto voce ganha mensalmente?</label>
+            <input type="number" name="salary">
+        </div>
+
+        <!-- 19 - email  -->
+
+        <div><label for="email">Insira seu email</label>
+            <input type="email" name="email" placeholder="digite seu email" required>
+        </div>
+
+        <!-- 20 - value  -->
+
+        <div><label for="value">Digite algum valor</label>
+            <input type="text" name="value" value="meu valor é esse">
+        </div>
+
+        <!-- 21 - disabled  -->
+        <div>
+            <p>Tente mudar o texto</p>
+            <input type="text" value="Esse valor é imutavel" disabled>
+        </div>
+
+        <!-- 13 - resetar form  -->
+        <div>
+            <input type="reset" value="Limpar">
+        </div>
 
         <!-- 5 - botão envio -->
         <div>
