@@ -1,0 +1,27 @@
+h1 {
+    color: red;
+}
+
+p {
+    background-color: red;
+    color: black;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        color: blue;
+        text-transform: lowercase;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    p {
+        background-color: beige;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    p { 
+        background-color: yellow;
+    }
+}

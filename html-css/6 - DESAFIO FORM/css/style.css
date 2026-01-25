@@ -3,10 +3,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
+    color: #444;
 
 }
 .purple {
-    background-color: purple;
+    background-color: #673ab7;
     height: 200px;
     width: 100%;
     position: absolute;
@@ -17,10 +18,10 @@ body {
 
 .main-container {
     background-color: #fff;
-    max-width: 800px;
+    max-width: 56%;
     position: relative;
-    margin: 50px auto;
-    padding: 20px;
+    margin: 130px auto;
+    padding: 0px 30px 30px 30px;
 }
 .form-item {
     font-size: 18px;
@@ -32,8 +33,23 @@ body {
 .form-item input,
 .form-item textarea {
     display: block;
-    width: 400px;
+    width: 100%;
     border: none;
     padding: 10px 0px;
     border-bottom: 1px solid #ddd;
+}
+
+.header-form {
+    /* margin: 0px; */
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.header-form h2{
+    padding: 10px;
+    margin: 0px;
+    display: inline-block;
+    border-bottom: 2px solid #673ab7;
+    color: #673ab7;
+    text-align: center;
 }
