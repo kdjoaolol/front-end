@@ -1,0 +1,176 @@
+:root {
+    --default-heigth: 450px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BARRA DE NAVEGAÇÃO  */
+.nav-bar {
+    background-color: #171c25;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-items p,
+.nav-items a,
+.logo p {
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-items a {
+    border-radius: 5px;
+    background-color: #44a744;
+    margin-right: 20px;
+}
+
+/* CONTEUDO INICIAL E IMAGEM NO BACKGROUND */
+.container-content-initial {
+    height: var(--default-heigth);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/mainbanner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.container-content-initial h1 {
+    font-size: 50px;
+}
+
+/* CONTEUDO TRAZENDO INFORMAÇÕES DO PRODUTO  */
+.container-info {
+    display: flex;
+    justify-content: center;
+}
+
+.container-info-detail {
+    height: var(--default-heigth);
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.fa-shield-alt {
+    color: #44a744;
+}
+
+.fa-rocket {
+    color: #d83636;
+}
+
+.fa-comments {
+    color: #d46c27;
+}
+
+.info-item i {
+    font-size: 60px;
+} 
+
+.info-item h3 {
+    color: #383737;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.info-item span {
+    font-size: 19px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #5c5b5b;
+}
+
+/* Planos e preços  */
+.title-plan-price {
+    height: calc(var(--default-heigth)/3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-container-plan-price-general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    width: 100%;
+}
+.container-main-plan-price {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    border: 1px solid blue;
+    height: var(--default-heigth);
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.plan-price-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.item-header {
+    background-color: #06101d;
+    position: relative;
+    padding: 30px 70px;
+    color: #ddd;
+}
+.item-body {
+    background-color: #DDD;
+    /* padding: 100px 70px; */
+    justify-content: space-around;
+}
+
+.item-body p {
+    padding: 20px;
+}
+
+.item-header p {
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+    padding: 50px;
+    border: 1px solid green;
+    position: absolute;
+    top: -65px;
+}
+
+
+
