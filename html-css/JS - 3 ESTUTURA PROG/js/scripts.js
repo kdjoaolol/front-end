@@ -99,5 +99,64 @@ if(userName === "José"){
     console.log("Não é nenhum outro da base")
 }
 
+// 10 - while 
 
+// let p = 0;
 
+// while(p < 5){
+//     console.log(`Repetindo ${p}`);
+//     p = p + 1;
+// }
+
+// // 11 - do while 
+
+// let o = 10
+
+// do {
+//     console.log(`Valor de o: ${o}`)
+//     o--
+// } while (o>1)
+
+// 12 - for 
+for(let t = 0; t < 10; t++){
+    console.log(`Repetindo ${t}`)
+}
+
+// 14 - break
+for(let g = 20; g > 10; g--){
+    console.log(`o valor de g é ${g}`)
+    if(g === 13){
+        break
+    }
+
+}
+
+// 15 - continue 
+for(x = 1; x < 10; x = x + 1){
+    if(x%2 === 0){
+        console.log(`${x} é par`)
+        continue
+    }
+
+    console.log(`${x} é impar`)
+}
+
+// 16 - switch 
+const job = "Engenheira"
+
+switch(job){
+    case "Programador":
+        console.log("Voce é um programador");
+        break;
+
+    case "Engenheiro":
+        console.log("Voce é um Engenheiro");
+        break;
+
+    case "Advigado":
+        console.log("Voce é um Advigado");
+        break;
+
+    default:
+        console.log("Sua profissão nao foi encontrada")
+}
