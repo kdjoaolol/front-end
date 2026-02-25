@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans",Arial,sans-serif;
+}
+
+
+/* NAVEGAÇÃO */
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.2rem;
+    margin-bottom: 5.5rem
+}
+
+header h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+nav ul a {
+    padding: 0.75rem 1rem;
+    color: #141414;
+    font-size: 1.125rem;
+}
+
+/* CONTEUDO PRINCIPAL P1 */
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 6.5rem;
+}
+
+.titulo-descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 35rem;
+    align-self: center;
+}
+
+.titulo-descricao h1 {
+    position: relative;
+    letter-spacing: 0px;
+    font-size: 4.5rem;
+    text-transform: capitalize;
+    font-weight: 750;
+}
+
+.titulo-descricao h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("img/detalhe.svg");
+    background-repeat: no-repeat;
+    width: 8rem;
+    height: 100%;
+    top: -2rem;
+    left: -2rem;
+    z-index: -1;
+}
+
+.titulo-descricao p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #525252;
+}
+
+/* TODO - COLOCAR ICONE DE FRIO EM CURITIBA */
+/* TODO - FINALIZAR PARTE DE EXPERIENCIA  */
